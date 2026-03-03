@@ -14,7 +14,8 @@ void setup ()
     //your code to initialize buttons goes here
     buttons = new MSButton[NUM_ROWS][NUM_COLS];
     for(int r = 0; r < NUM_ROWS; r++)
-      for
+      for(int c = 0; c < NUM_COLS; c++)
+        buttons[r][c] = new MSButton();
     
     
     setMines();
